@@ -22,7 +22,6 @@ printhelp() {
 }
 
 process() {
-	local payload='{longUrl: '$url'}'
 	result=`$curl -s $api \
 	-H 'Content-Type: application/json' \
 	-d '{"longUrl": "'$url'"}'`
